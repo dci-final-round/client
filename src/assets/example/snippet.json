@@ -1,0 +1,14 @@
+{
+  "dates": { "created": "2021-08-25T12:19:53.249Z" },
+  "upvote": 0,
+  "downvote": 0,
+  "favourite": false,
+  "tags": [],
+  "_id": "6126356aa7dccb4b2000a31a",
+  "title": "Simple Function",
+  "content": "function name(parameter1, parameter2, parameter3) {\n// code to be executed\n}",
+  "description": "example of a simple function in javascript",
+  "author": "6124c2d10215e73b3cc0529a",
+  "language": "javascript",
+  "__v": 0
+}
