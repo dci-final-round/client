@@ -23,7 +23,7 @@ export default function LoginPage() {
 
     const [isLoading, setIsLoading] = useState(false);
   
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     setIsLoading(true);
     try {
@@ -51,7 +51,7 @@ export default function LoginPage() {
                 <Input
                   type="email"
                   placeholder="test@test.com"
-                  onChange={(event) => setEmail(event.currentTarget.value)}
+                  onChange={(event: { currentTarget: { value: React.SetStateAction<string>; }; }) => setEmail(event.currentTarget.value)}
                 />
               </FormControl>
               <FormControl isRequired>
@@ -59,7 +59,7 @@ export default function LoginPage() {
                 <Input
                   type="password"
                   placeholder="********"
-                  onChange={(event) => setPassword(event.currentTarget.value)}
+                  onChange={(event: { currentTarget: { value: React.SetStateAction<string>; }; }) => setPassword(event.currentTarget.value)}
                 />
               </FormControl>
               <Button
